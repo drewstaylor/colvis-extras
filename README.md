@@ -142,7 +142,7 @@ Separator elements for the different button categories:
 Html hr tags are automatically inserted between different button categories, i.e. bExtras, 
 bClose, bShowAll, bRestore etc. as a visual aid to organizing the button types into categories.
 
-To turn off hr tag separators comment out the lines like:
+To turn off hr tag separators comment out the lines like these:
 
     nSpanHR = this._fnColSeparate();
     this.dom.collection.appendChild( nSpanHR );
