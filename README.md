@@ -33,17 +33,19 @@ dropdown menu, so it can be useful to get a grid layout the for menu items:
 
 ColVis to "sDom":s text label insertion:
 <p>
-@property bLabel
-@type     Array
-@default  []
-@property bLabelPost
+@property bLabel<br />
+@type     Array<br />
+@default  [ ]<br />
 </p>
 <p>
-@type     Array
-@default  []
-@property sLabel
-@type     String
-@default  Viewing options:
+@property bLabelPost<br />
+@type     Array<br />
+@default  [ ]<br />
+</p>
+<p>
+@property sLabel<br />
+@type     String<br />
+@default  Viewing options:<br />
 </p>
 If colvis has it's own row in the sdom it can be nice to add a text label just outside of the <button>...</button> 
 code. The label can get inserted before or after the ColVis menu button.  
@@ -63,14 +65,14 @@ code. The label can get inserted before or after the ColVis menu button.
 
 Button to close the ColVis dropdown menu:
 <p>
-@property bClose
-@type     Array
-@default  []
+@property bClose<br />
+@type     Array<br />
+@default  [ ]<br />
 </p>
 <p>
-@property sClose
-@type     String
-@default  "x"
+@property sClose<br />
+@type     String<br />
+@default  "x"<br />
 </p>
 To close the ColVis dropdown menu you click outside of the menu region, or by clicking the main button, or, 
 to get nasty, by settting _fnCollectionHide() after the firing every menu action. This init param adds a button 
@@ -99,9 +101,9 @@ to close the dropdown menu, and it's always added as the last menu item.
 
 Add an extra buttons section:
 <p>
-@property bExtras
-@type     Array
-@default  []
+@property bExtras<br />
+@type     Array<br />
+@default  [ ]<br />
 </p>
 ColVis is a handy dropdown menu, so it can be useful to add extra buttons there to perform different operations 
 than just showing and hiding columns in your DataTables. bExtras option allows you to create your own button 
@@ -135,8 +137,8 @@ and you'll probably want to attach their sweet onclick functions.
     
 Separator elements for the different button categories:
 <p>
-@param {object} 
-@type function _fnColSeparate()
+@param {object}<br />
+@type function _fnColSeparate()<br />
 </p>
 Html hr tags are automatically inserted between different button categories, i.e. bExtras, 
 bClose, bShowAll, bRestore etc. as a visual aid to organizing the button types into categories.
