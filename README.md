@@ -74,8 +74,8 @@ Button to close the ColVis dropdown menu:
 @default  "x"<br />
 </p>
 To close the ColVis dropdown menu you click outside of the menu region, or by clicking the main button, or, 
-to get nasty, by settting _fnCollectionHide() after the firing every menu action. This init param adds a button 
-to close the dropdown menu, and it's always added as the last menu item.
+to get nasty, by settting _fnCollectionHide() after every menu action is triggered. These init param will add a button 
+to close the dropdown menu. It's always added as the last button in the array.
 
 @example
 
