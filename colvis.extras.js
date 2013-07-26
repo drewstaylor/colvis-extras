@@ -1,15 +1,15 @@
 /*
- * Original File:        ColVis.js
- * Version:     1.0.8
- * CVS:         $Id$
- * Description: Controls for column visiblity in DataTables
- * Author:      Allan Jardine (www.sprymedia.co.uk)
- * Created:     Wed Sep 15 18:23:29 BST 2010
- * Modified:    $Date$ by $Author$
- * Language:    Javascript
- * License:     GPL v2 or BSD 3 point style
- * Project:     Just a little bit of fun :-)
- * Contact:     www.sprymedia.co.uk/contact
+ * Original File:	ColVis.js
+ * Version:     	1.0.8
+ * CVS:         	$Id$
+ * Description: 	Controls for column visiblity in DataTables
+ * Author:      	Allan Jardine (www.sprymedia.co.uk)
+ * Created:     	Wed Sep 15 18:23:29 BST 2010
+ * Modified:    	$Date$ by $Author$
+ * Language:    	Javascript
+ * License:     	GPL v2 or BSD 3 point style
+ * Project:     	Just a little bit of fun :-)
+ * Contact:     	www.sprymedia.co.uk/contact
  * 
  * Copyright 2010-2011 Allan Jardine, all rights reserved.
  *
