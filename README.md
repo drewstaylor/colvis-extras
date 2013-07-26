@@ -12,9 +12,9 @@ For use with non-Bootstrap integrations add the following button classes to your
 <hr />
 Grid layout of colvis dropdown menu:
 <p>
-@property iMaxRows
-@type     int
-@default  -1
+@property iMaxRows<br />
+@type     int<br />
+@default  -1<br />
 </p>
 
 If you have a table with a lot of columns the user could get a scroll bar on the main ColVis 
