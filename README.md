@@ -47,8 +47,7 @@ ColVis to "sDom":s text label insertion:
 @type     String<br />
 @default  Viewing options:<br />
 </p>
-If colvis has it's own row in the sdom it can be nice to add a text label just outside of the <button>...</button> 
-code. The label can get inserted before or after the ColVis menu button.  
+If colvis has it's own row in the sdom it can be nice to add a text label just outside of the button node. This text label can get inserted before or after the ColVis menu button.  
 
 @example
 
