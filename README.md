@@ -5,10 +5,9 @@ colvis-extras.js is an extension of the ColVis plugin for DataTables (www.datata
 Among other things, it allows for toggling button types and different menu layout integrations.
 
 
-Button extensions are based on Twitter Bootstrap buttons ex.: <pre><button class="btn" /></pre>
-For use with non-Bootstrap integrations add the following button classes to your CSS: 
-"btn" (basic button class), "btn-group" (button class for button groups), "btn-primary" (Master menu button), 
-"btn-danger" (red background button for closing the dropdown menu).
+Button extensions are based on Twitter Bootstrap buttons. For use with non-Bootstrap integrations add these button 
+classes to your ColVis CSS: "btn" (basic buttons), "btn-group" (groups of buttons), "btn-primary" (ColVis menu button, 
+sShowAll, bRestore), "btn-danger" (bClose).
 
 <hr />
 Grid layout of colvis dropdown menu:
