@@ -18,7 +18,7 @@ Grid layout of colvis dropdown menu:
 </p>
 
 If you have a table with a lot of columns the user could get a scroll bar on the main ColVis 
-dropdown menu, so it can be useful to get a grid layout for the menu items:
+dropdown menu so it can be useful to get a grid layout for the menu items:
 
 @example
 
