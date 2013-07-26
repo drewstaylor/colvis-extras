@@ -21,7 +21,7 @@
  *
  *
  *
- * New File:   colvis.extras.js 
+ * New File:   colvis.extras.js  
  * Version: 	1.1.2
  * Created: 	12/01/2013
  * Modified:	25/07/2013
