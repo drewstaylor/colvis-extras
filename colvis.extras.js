@@ -25,136 +25,136 @@
  * Version: 	1.1.2
  * Created: 	12/01/2013
  * Modified:	25/07/2013
- * Authors:		Drew Taylor 
- * 				(search this file for "Drew"), 
- * 				STWI 
- * 				(search this file for "STWI") 
- *				Thanks to STWI for the base iMaxRows integration! 
- * 				If anyone knows how to contact STWI or what the acronym stands email me. 
+ * Authors:	Drew Taylor 
+ * 		(search this file for "Drew"), 
+ * 		STWI 
+ * 		(search this file for "STWI") 
+ *		Thanks to STWI for the base iMaxRows integration! 
+ * 		If anyone knows how to contact STWI or what the acronym stands email me. 
  *              Code was found in forums but can no longer find the thread.
  * 				
  * Language: 	Javascript
- * Contact:		tay.drew@hotmail.ca 
+ * Contact:	tay.drew@hotmail.ca 
  * Description: ColVis extension which allows for toggling button types and different menu layout integrations.
- * 				Button extensions for Twitter Bootstrap buttons; i.e.  <button class="btn">
- * 				For use with non-Bootstrap integrations add these button classes to your CSS: 
- * 				"btn" (basic buttons), "btn-group" (groups of buttons), "btn-primary" (ColVis menu button, sShowAll, bRestore), 
- * 				"btn-danger" (bClose).
+ * 		Button extensions for Twitter Bootstrap buttons; i.e.  <button class="btn">
+ * 		For use with non-Bootstrap integrations add these button classes to your CSS: 
+ * 		"btn" (basic buttons), "btn-group" (groups of buttons), "btn-primary" (ColVis menu button, sShowAll, bRestore), 
+ * 		"btn-danger" (bClose).
  *
  * Extensions:	1) grid layout of colvis dropdown menu:
- * 				@property iMaxRows
- * 				@type     int
- * 				@default  -1
+ * 		@property iMaxRows
+ * 		@type     int
+ * 		@default  -1
  * 				
- * 				If you have a table with a lot of columns the user could get a scroll bar on the main ColVis 
- * 				dropdown menu, so it can be useful to get a grid layout the for menu items:
+ * 		If you have a table with a lot of columns the user could get a scroll bar on the main ColVis 
+ * 		dropdown menu, so it can be useful to get a grid layout the for menu items:
  * 				
- * 				@example
- * 				$(document).ready(function(){
- *			    	$("#example").dataTable({
- *				        "sDom": "C<'clear'>lfrtip",
- * 						"oColVis": { "iMaxRows": 3 } // Maximum of 3 buttons per column in menu items array. 
- *				    });
- *				});
+ * 		@example
+ * 		$(document).ready(function(){
+ *			$("#example").dataTable({
+ *				"sDom": "C<'clear'>lfrtip",
+ * 				"oColVis": { "iMaxRows": 3 } // Maximum of 3 buttons per column in menu items array. 
+ *			});
+ *		});
  * 
- * 				2) ColVis to "sDom":s text label insertion:
- * 				@property bLabel
- *				@type     Array
- *				@default  []
- *				@property bLabelPost
- *				@type     Array
- *				@default  []
- * 				@property sLabel
- *				@type     String
- *				@default  Viewing options:
+ * 		2) ColVis to "sDom":s text label insertion:
+ * 		@property bLabel
+ *		@type     Array
+ *		@default  []
+ *		@property bLabelPost
+ *		@type     Array
+ *		@default  []
+ * 		@property sLabel
+ *		@type     String
+ *		@default  Viewing options:
  * 
- * 				If colvis has it's own row in the sdom it can be nice to add a text label just outside of the <button>...</button> 
- * 				code. The label can get inserted before or after the ColVis menu button.  
- * 				
- * 				@example
- * 				$(document).ready(function(){
- *			    	$("#example").dataTable({
- *				        "sDom": "C<'clear'>lfrtip",
- * 						"oColVis": { "buttonText": "<span class='caret' />","sLabel": "Customize your view: ","bLabel": true } 
- *				    }); 
- *				});		// "sLabel": define the text label 
- * 						// "bLabel": true, displays sLabel before ColVis menu button, to display it after the menu button 
- * 						// instead "bLabel" use "bLabelPost": true
+ * 		If colvis has it's own row in the sdom it can be nice to add a text label just outside of the <button>...</button> 
+ * 		code. The label can get inserted before or after the ColVis menu button.  
  * 
- * 				3) Button to close the ColVis dropdown menu:
- * 				@property bClose
- *				@type     Array
- *				@default  []
- * 				@property sClose
- *				@type     String
- *				@default  "x"
+ * 		@example
+ * 		$(document).ready(function(){
+ *			$("#example").dataTable({
+ *				"sDom": "C<'clear'>lfrtip",
+ * 				"oColVis": { "buttonText": "<span class='caret' />","sLabel": "Customize your view: ","bLabel": true } 
+ *			}); 
+ *		});	// "sLabel": define the text label 
+ * 			// "bLabel": true, displays sLabel before ColVis menu button, to display it after the menu button 
+ * 			// instead "bLabel" use "bLabelPost": true
  * 
- * 				To close the ColVis dropdown menu you click outside of the menu region, or by clicking the main button, or, 
- * 				to get nasty, by settting _fnCollectionHide() after the firing every menu action. This init param adds a button 
- * 				to close the dropdown menu, and it's always added as the last menu item.
- * 				
- * 				@example
- * 				// This option is turned on by default, to turn it off set bClose to false in your DataTables init:
- * 				
- * 				$(document).ready(function(){
- *			    	$("#example").dataTable({
- *				        "sDom": "C<'clear'>lfrtip",
- * 						"oColVis": { "bClose": false } 
- *				    });
- *				});
+ * 		3) Button to close the ColVis dropdown menu:
+ * 		@property bClose
+ *		@type     Array
+ *		@default  []
+ * 		@property sClose
+ *		@type     String
+ *		@default  "x"
  * 
- * 				// Or, to change the text of the close button (default button text is "x"):
+ * 		To close the ColVis dropdown menu you click outside of the menu region, or by clicking the main button, or, 
+ * 		to get nasty, by settting _fnCollectionHide() after the firing every menu action. This init param adds a button 
+ * 		to close the dropdown menu, and it's always added as the last menu item.
+ * 				
+ * 		@example
+ * 		// This option is turned on by default, to turn it off set bClose to false in your DataTables init:
+ * 				
+ * 		$(document).ready(function(){
+ *			$("#example").dataTable({
+ *				"sDom": "C<'clear'>lfrtip",
+* 				"oColVis": { "bClose": false } 
+ *			});
+ *		});
  * 
- * 				$(document).ready(function(){
- *			    	$("#example").dataTable({
- *				        "sDom": "C<'clear'>lfrtip",
- * 						"oColVis": { "bClose": true, "sClose": "Close Menu" }	// Sets menu text to "Close Menu"
- *				    });														  	// Alternatively, we could have injected html:
- *				});																// "sClose": "<i class="icon-search"></i>"
- * 				
- * 				4) Add extra buttons section:
- * 				@property bExtras
- *				@type     Array
- *				@default  []
+ * 		// Or, to change the text of the close button (default button text is "x"):
  * 
- * 				ColVis is a handy dropdown menu, so it can be useful to add extra buttons there to perform different operations 
- * 				than just showing and hiding columns in your DataTables. bExtras option allows you to create your own button 
- * 				sections. You'll need to do a little work defining the buttons and how many buttons you want inside bExtras, 
- * 				and you'll probably want to attach their sweet onclick functions.
+ * 		$(document).ready(function(){
+ *			$("#example").dataTable({
+ *				"sDom": "C<'clear'>lfrtip",
+ * 					"oColVis": { "bClose": true, "sClose": "Close Menu" }	// Sets menu text to "Close Menu"
+ *			});														  	// Alternatively, we could have injected html:
+ *		});																// "sClose": "<i class="icon-search"></i>"
  * 				
- * 				@example
- * 				//To get started you'll need to search colvis.extras.js for this string: "var arr = [ "button1", "button2", "button3"];"
- * 				// Now if we change it  to: 
- * 				var arr = [ "Public", "Hidden" ];
- * 				// We set the button text for and declare how many buttons get added the menu section.
+ * 		4) Add extra buttons section:
+ * 		@property bExtras
+ *		@type     Array
+ *		@default  []
+ * 
+ * 		ColVis is a handy dropdown menu, so it can be useful to add extra buttons there to perform different operations 
+ * 		than just showing and hiding columns in your DataTables. bExtras option allows you to create your own button 
+ * 		sections. You'll need to do a little work defining the buttons and how many buttons you want inside bExtras, 
+ * 		and you'll probably want to attach their sweet onclick functions.
  * 				
- * 				//Then in our DataTables init:
- * 				$(document).ready(function(){
- *			    	$("#example").dataTable({
- *				        "sDom": "C<'clear'>lfrtip",
- * 						"oColVis": { "bExtras": true } // Turns on new section
- *				    });
+ * 		@example
+ * 		//To get started you'll need to search colvis.extras.js for this string: "var arr = [ "button1", "button2", "button3"];"
+ * 		// Now if we change it  to: 
+ * 		var arr = [ "Public", "Hidden" ];
+ * 		// We set the button text for and declare how many buttons get added the menu section.
+ * 				
+ * 		//Then in our DataTables init:
+ * 		$(document).ready(function(){
+ *			$("#example").dataTable({
+ *				"sDom": "C<'clear'>lfrtip",
+ * 				"oColVis": { "bExtras": true } // Turns on new section
+ *			});
  * 					
- * 					// Our "Public" and "Hidden" buttons get id attributes like this:
- * 					$("#extrasbtn-1").click(function() {
- * 						window.location.href = "start.php?page=inventory&filter=public";
- *					}); // example redirect 
+ * 			// Our "Public" and "Hidden" buttons get id attributes like this:
+ * 			$("#extrasbtn-1").click(function() {
+ * 				window.location.href = "start.php?page=inventory&filter=public";
+ *			}); // example redirect 
  *					
- *					$("#extrasbtn-2").click(function() {
- * 						window.location.href = "start.php?page=inventory&filter=hidden";
- *					}); // example redirect
- *				});		
+ *			$("#extrasbtn-2").click(function() {
+ * 				window.location.href = "start.php?page=inventory&filter=hidden";
+ *			}); // example redirect
+ *		});		
  * 
- * 				5) Separator elements for the different button categories:
- * 				@param {object} 
- * 				@type function _fnColSeparate()
+ * 		5) Separator elements for the different button categories:
+ * 		@param {object} 
+ * 		@type function _fnColSeparate()
  * 
- * 				Html <hr> are automatically inserted between different button categories, i.e. bExtras, 
- * 				bClose, bShowAll, bRestore etc. as a visual aid to organizing the button types into categories.
+ * 		Html <hr> are automatically inserted between different button categories, i.e. bExtras, 
+ * 		bClose, bShowAll, bRestore etc. as a visual aid to organizing the button types into categories.
  * 				
- * 				To turn off <hr> separators comment out the lines like:
- * 				// nSpanHR = this._fnColSeparate();
- * 				// this.dom.collection.appendChild( nSpanHR );
+ * 		To turn off <hr> separators comment out the lines like:
+ * 		// nSpanHR = this._fnColSeparate();
+ * 		// this.dom.collection.appendChild( nSpanHR );
  * 						 
  * */
 
