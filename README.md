@@ -9,16 +9,10 @@ Button extensions are based on Twitter Bootstrap buttons. For use with non-Boots
 classes to your ColVis CSS: "btn" (basic buttons), "btn-group" (groups of buttons), "btn-primary" (ColVis menu button, 
 sShowAll, bRestore), "btn-danger" (bClose).
 
-<hr />
-Grid layout of colvis dropdown menu:
-<p>
-@property iMaxRows<br />
-@type     int<br />
-@default  -1<br />
-</p>
+<strong><b>Grid menu layout</b></strong>
 
 If you have a table with a lot of columns the user could get a scroll bar on the main ColVis 
-dropdown menu so it can be useful to get a grid layout for the menu items:
+dropdown menu so it can be useful to get a grid layout for the menu items
 
 @example
 
@@ -31,22 +25,8 @@ dropdown menu so it can be useful to get a grid layout for the menu items:
 
 <hr />
 
-ColVis to "sDom":s text label insertion:
-<p>
-@property bLabel<br />
-@type     Array<br />
-@default  [ ]<br />
-</p>
-<p>
-@property bLabelPost<br />
-@type     Array<br />
-@default  [ ]<br />
-</p>
-<p>
-@property sLabel<br />
-@type     String<br />
-@default  Viewing options:<br />
-</p>
+<strong><b>ColVis to "sDom":s text label insertion</strong></b>
+
 If colvis has it's own row in the sdom it can be nice to add a text label just outside of the button node. This text label can get inserted before or after the ColVis menu button.  
 
 @example
@@ -62,17 +42,8 @@ If colvis has it's own row in the sdom it can be nice to add a text label just o
 
 <hr />
 
-Button to close the ColVis dropdown menu:
-<p>
-@property bClose<br />
-@type     Array<br />
-@default  [ ]<br />
-</p>
-<p>
-@property sClose<br />
-@type     String<br />
-@default  "x"<br />
-</p>
+<strong><b>Button to close the ColVis dropdown menu</b></strong>
+
 To close the ColVis dropdown menu you click outside of the menu region, or by clicking the main button, or, 
 to get nasty, by settting _fnCollectionHide() after every menu action is triggered. These init param will add a button 
 to close the dropdown menu. It's always added as the last button in the array.
@@ -98,12 +69,8 @@ to close the dropdown menu. It's always added as the last button in the array.
 
 <hr />
 
-Add an extra buttons section:
-<p>
-@property bExtras<br />
-@type     Array<br />
-@default  [ ]<br />
-</p>
+<strong><b>Add an extra buttons section</b></strong>
+
 ColVis is a handy dropdown menu, so it can be useful to add extra buttons there to perform different operations 
 than just showing and hiding columns in your DataTables. bExtras option allows you to create your own button 
 sections. You'll need to do a little work defining the buttons and how many buttons you want inside bExtras, 
@@ -134,11 +101,8 @@ and you'll probably want to attach their sweet onclick functions.
 
 <hr />
     
-Separator elements for the different button categories:
-<p>
-@param {object}<br />
-@type function _fnColSeparate()<br />
-</p>
+<strong><b>Separator elements for button categories</b></strong>
+
 Html hr tags are automatically inserted between different button categories, i.e. bExtras, 
 bClose, bShowAll, bRestore etc. as a visual aid to organizing the button types into categories.
 
