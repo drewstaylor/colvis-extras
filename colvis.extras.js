@@ -483,6 +483,8 @@ ColVis.prototype = {
 		}
 		this.dom.buttons.splice( 0, this.dom.buttons.length );
 		
+		this.dom.collection.removeChild( nSpanHR );
+		
 		if ( this.dom.restore )
 		{
 			this.dom.restore.parentNode( this.dom.restore );
@@ -493,8 +495,7 @@ ColVis.prototype = {
 		
 		/* Update the checkboxes */
 		this._fnDrawCallback();
-	},	
-	
+	},
 	/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 	 * Private methods (they are of course public in JS, but recommended as private)
 	 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
