@@ -1,27 +1,5 @@
-/*
- * Original File:	ColVis.js
- * Version:     	1.0.8
- * CVS:         	$Id$
- * Description: 	Controls for column visiblity in DataTables
- * Author:      	Allan Jardine (www.sprymedia.co.uk)
- * Created:     	Wed Sep 15 18:23:29 BST 2010
- * Modified:    	$Date$ by $Author$
- * Language:    	Javascript
- * License:     	GPL v2 or BSD 3 point style
- * Project:     	Just a little bit of fun :-)
- * Contact:     	www.sprymedia.co.uk/contact
- * 
- * Copyright 2010-2011 Allan Jardine, all rights reserved.
- *
- * This source file is free software, under either the GPL v2 license or a
- * BSD style license, available at:
- *   http://datatables.net/license_gpl2
- *   http://datatables.net/license_bsd
- *
- *
- *
- *
- * New File:   colvis.extras.js  
+/* 
+ * File:   colvis.extras.js  
  * Version: 	1.1.2
  * Created: 	12/01/2013
  * Modified:	25/07/2013
@@ -99,7 +77,7 @@
  * 		$(document).ready(function(){
  *			$("#example").dataTable({
  *				"sDom": "C<'clear'>lfrtip",
-* 				"oColVis": { "bClose": false } 
+ * 				"oColVis": { "bClose": false } 
  *			});
  *		});
  * 
@@ -156,7 +134,27 @@
  * 		// nSpanHR = this._fnColSeparate();
  * 		// this.dom.collection.appendChild( nSpanHR );
  * 						 
- * */
+ *
+ * Original File:	ColVis.js
+ * Version:     	1.0.8
+ * CVS:         	$Id$
+ * Description: 	Controls for column visiblity in DataTables
+ * Author:      	Allan Jardine (www.sprymedia.co.uk)
+ * Created:     	Wed Sep 15 18:23:29 BST 2010
+ * Modified:    	$Date$ by $Author$
+ * Language:    	Javascript
+ * License:     	GPL v2 or BSD 3 point style
+ * Project:     	Just a little bit of fun :-)
+ * Contact:     	www.sprymedia.co.uk/contact
+ * 
+ * Copyright 2010-2011 Allan Jardine, all rights reserved.
+ *
+ * This source file is free software, under either the GPL v2 license or a
+ * BSD style license, available at:
+ *   http://datatables.net/license_gpl2
+ *   http://datatables.net/license_bsd
+ *
+ */
 
 (function($) {
 
