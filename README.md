@@ -65,7 +65,7 @@ to close the dropdown menu. It's always added as the last button in the array.
             "sDom": "C<'clear'>lfrtip",
             "oColVis": { "bClose": true, "sClose": "Close Menu" }	// Sets menu text to "Close Menu"
         });	// Alternatively, we could have injected html:
-    });	// "sClose": "<i class="icon-search"></i>"
+    });	// "sClose": "<i class="icon-close"></i>"
 
 <hr />
 
